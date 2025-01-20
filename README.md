@@ -1,8 +1,10 @@
 # FaceSearchAI
 
-1. Register Endpoint
+Register Endpoint
+
 Endpoint
 POST /register
+
 Description
 This endpoint allows a new user to register by providing their email, password, and optional name and FCM token. It validates the email format, checks for existing users, and sends a verification email if the registration is successful.
 
@@ -40,6 +42,8 @@ Internal Logic
 •  If the email is new, it creates a new user record with a hashed password and default credits.
 5. Sends a verification email to the new user.
 
+
+****************************************************************************************************************
 
 Login Endpoint
 Endpoint
@@ -88,13 +92,11 @@ Error Handling
 •  Returns a 500 status for unexpected errors.
 further modifications or additional endpoints documented, feel free to ask!
 
+********************************************************************************************************
 
 
+Google Sign-In Endpoint
 
-
-
-
-3. Google Sign-In Endpoint
 Endpoint
 POST /auth/google
 Description
@@ -127,15 +129,10 @@ Internal Logic
 5. Returns the tokens in the response.
 
 
+********************************************************************************************************
 
+Verify Email Endpoint
 
-
-
-
-	
-
-
-4. Verify Email Endpoint
 Endpoint
 GET /verify-email
 Description
@@ -160,10 +157,10 @@ Internal Logic
 5. Returns a confirmation message and tokens (if applicable).
 
 
+********************************************************************************************************
 
+Search Endpoint
 
-
-5. Search Endpoint
 Endpoint
 POST /search
 Description
@@ -208,7 +205,10 @@ Internal Logic
 •  Returns the search results along with user credit information.
 
 
-6. Public Search Endpoint
+********************************************************************************************************
+
+Public Search Endpoint
+
 Endpoint
 POST /public-search
 Description
@@ -291,10 +291,12 @@ Internal Logic
 
 
 
+********************************************************************************************************
 
 
 
-8. Get History Preview Endpoint
+Get History Preview Endpoint
+
 Endpoint
 GET /history-preview
 Description
@@ -335,10 +337,12 @@ Internal Logic
 
 
 
+********************************************************************************************************
 
 
 
-9. Find Info Endpoint
+Find Info Endpoint
+
 Endpoint
 POST /find_info
 Description
@@ -382,7 +386,11 @@ Internal Logic
 6. Updates the search history entry with the GPT result.
 7. Returns a confirmation message along with the GPT result and original search results.
 ---
-10. Profile Endpoint
+
+********************************************************************************************************
+
+Profile Endpoint
+
 Endpoint
 Headers
 •  Authorization: Bearer token for authentication (e.g., Authorization: Bearer <access_token>)
@@ -449,26 +457,11 @@ Internal Logic
 
 
 
+********************************************************************************************************
 
 
+Apple Auth Endpoint
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-11. Apple Auth Endpoint
 Endpoint
 POST /auth/apple
 Description
@@ -499,17 +492,12 @@ Internal Logic
 
 
 
+********************************************************************************************************
 
 
 
+Generate PDF Endpoint
 
-
-
-
-
-
-
-12. Generate PDF Endpoint
 Endpoint
 POST /pdf/generate
 Description
@@ -544,16 +532,11 @@ Internal Logic
 
 
 
+********************************************************************************************************
 
 
+Get Google Sheet Link Endpoint
 
-
-
-
-
-
-
-13. Get Google Sheet Link Endpoint
 Endpoint
 GET /gsheet/link
 Description
@@ -574,8 +557,11 @@ Internal Logic
 3. Returns the Google Sheet link if it exists, otherwise raises an error.
 
 
+********************************************************************************************************
 
-14. Initialize Subscription Endpoint
+
+Initialize Subscription Endpoint
+
 Endpoint
 POST /subscriptions/initialize
 Description This endpoint initializes a subscription by creating a Stripe checkout session for the selected plan. It handles both registered and anonymous users, setting up the appropriate session parameters based on the user's status.
@@ -611,9 +597,11 @@ o	If the user is not authenticated (anonymous user), sets up billing address col
 7.	Returns the checkout URL and session ID in the response.
 
 
+********************************************************************************************************
 
 
-15. Stripe Webhook Endpoint
+Stripe Webhook Endpoint
+
 Endpoint
 POST /webhooks/stripe
 Description This endpoint handles Stripe webhook events by validating the webhook signature and processing different event types, such as checkout.session.completed, invoice.payment_succeeded, customer.subscription.deleted, and invoice.payment_failed.
@@ -639,12 +627,18 @@ o	invoice.payment_failed: Calls handle_payment_failed.
 6.	If there is an error during webhook verification or processing, logs the error and raises an HTTPException.
 
 
+********************************************************************************************************
+
+
 Endpoint
 GET /payment/success
+
 Description
 This endpoint handles the success page for payment transactions. It retrieves the checkout session details, determines if the user is registered or anonymous, and redirects to the appropriate success page.
+
 Request Payload
 The session ID is passed as a query parameter:
+
 plaintext
 /payment/success?session_id=YourSessionID
 Response
@@ -673,12 +667,18 @@ Example Response URLs
 
 
 
+********************************************************************************************************
+
+
 Endpoint
 GET /payment/canceled
+
 Description
 This endpoint handles the cancellation of payment transactions. It logs the cancellation attempt and redirects to the appropriate page with a cancellation message.
+
 Request Payload
 The session ID is passed as a query parameter (optional):
+
 plaintext
 /payment/canceled?session_id=YourSessionID
 Response
@@ -697,7 +697,12 @@ Example Response URLs
 •	Success URL: https://face-search.vercel.app/payment/canceled?message=Payment%20was%20canceled&status=canceled
 •	Error URL: https://face-search.vercel.app/payment/canceled?message=Something%20went%20wrong&status=error
 
-17. Verify App Subscription Endpoint
+
+********************************************************************************************************
+
+
+Verify App Subscription Endpoint
+
 Endpoint
 POST /subscriptions/verify/app
 Description
@@ -736,9 +741,11 @@ Internal Logic
 
 
 
+********************************************************************************************************
 
 
-18. Google Play Notifications Endpoint
+Google Play Notifications Endpoint
+
 Endpoint
 POST /notifications/google-play
 Description
@@ -767,19 +774,11 @@ Internal Logic
 •  Returns a confirmation message indicating the result of the processing.
 
 
+********************************************************************************************************
 
 
+Submit Feedback Endpoint
 
-
-
-
-
-
-
-
-
-
-19. Submit Feedback Endpoint
 Endpoint
 POST /feedback
 Description
@@ -817,17 +816,15 @@ Internal Logic
 4. Returns a confirmation message along with the submitted feedback details.
 
 
+********************************************************************************************************
 
 
-
-
-
-
-20. Get All Feedback Endpoint
+Get All Feedback Endpoint
 Endpoint
 GET /feedback/all
 Description
 This endpoint retrieves all user feedback submitted to the system. It returns a list of feedback entries along with the user names and submission timestamps.
+
 Headers
 •  Authorization: Bearer token for authentication (e.g., Authorization: Bearer <access_token>)
 
@@ -860,14 +857,10 @@ Internal Logic
 •  Returns the list of feedback entries along with the total count.
 
 
+********************************************************************************************************
 
 
-
-
-
-
-
-21. Get History Detail Endpoint
+Get History Detail Endpoint
 Endpoint
 GET /history-detail/{history_id}
 Description This endpoint retrieves detailed search history for a specific ID. It checks if the user is authenticated and fetches the search history associated with the given history ID for the current user.
@@ -922,27 +915,14 @@ o	If not, returns an error response indicating the user must be logged in.
 
 
 
+********************************************************************************************************
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-22. Get Plans Endpoint
+Get Plans Endpoint
 Endpoint
 GET /plans
 Description This endpoint retrieves all available subscription plans from the database.
+
 Response
 json
 [
@@ -979,6 +959,9 @@ o	If no plans are found, raises a "No plans found" error.
 3.	Transforms the database result to match the Pydantic model PlanResponse.
 4.	Returns the list of subscription plans in the response.
 
+
+
+********************************************************************************************************
 
 
 RevenueCat Webhook Endpoint
@@ -1027,10 +1010,15 @@ o	EXPIRATION: Expires the subscription and updates the user's credits and status
 7.	Returns a response with the tokens and other details.
 
 
+
+********************************************************************************************************
+
+
 Endpoint
 POST /reset-password
 Description
 This endpoint handles password reset requests by validating the request payload, updating the user's password, and returning a success message.
+
 Headers
 •  Authorization: Bearer token for authentication (e.g., Authorization: Bearer <access_token>)
 
@@ -1066,6 +1054,9 @@ o	Hashes the new password and updates the user's hashed_password field in the da
 o	Commits the changes to the database.
 5.	Returns a response:
 o	Returns a JSON response with the status, message, and details.
+
+
+********************************************************************************************************
 
 
 Endpoint
@@ -1108,7 +1099,7 @@ o	Creates a new access token and refresh token for the user.
 o	Returns a JSON response with the status, message, and details.
 
 
-
+********************************************************************************************************
 
 
 Forgot Password
@@ -1145,12 +1136,7 @@ curl -X POST "http://your-api-url/forgot-password" -H "Content-Type: application
 - The user will receive an email with a password reset link if an account exists with the provided email.
 
 
-
-
-
-
-
-
+********************************************************************************************************
 
 
 
