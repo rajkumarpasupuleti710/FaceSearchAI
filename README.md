@@ -166,7 +166,7 @@ Cross-session context retention
 
 Provides personalized search results
 
-Official Website: https://www.facesearchai.com/
+
 
 
 
