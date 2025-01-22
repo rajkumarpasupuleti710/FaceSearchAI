@@ -2,6 +2,8 @@
 
 ![Face Search AI Logo](https://www.facesearchai.com/FaceSeachLogo.svg)
 
+
+
 ## About Face Search AI
 
 Face Search AI is a cutting-edge platform that enables users to find images of individuals, identify their sources, and extract detailed information such as names and descriptions. It offers tools to enhance privacy and protect personal images.
@@ -20,6 +22,9 @@ Face Search AI is a cutting-edge platform that enables users to find images of i
 - **Image Protection**: File DMCA takedown requests for unauthorized use of your images.  
 
 Face Search AI combines innovation and privacy protection, shaping the future of face search technology.
+
+
+![Face Search AI](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdribbble.com%2Fshots%2F6783134-Face-recognition&psig=AOvVaw2bLSY20Be0hLvCV2A088lt&ust=1737626934469000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMC7y_SKiYsDFQAAAAAdAAAAABAJ)
 
 ---
 
