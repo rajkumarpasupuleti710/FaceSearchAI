@@ -139,12 +139,13 @@ This API is proprietary. Unauthorized use is prohibited.
 
 
 
-✨ Key Features
+**✨ Key Features
 
 
-Face Search AI
 
-🤖 Advanced Facial Recognition Technology
+*Face Search AI
+
+**🤖 Advanced Facial Recognition Technology
 
 High-accuracy facial recognition and matching
 
@@ -156,7 +157,8 @@ API key-based secure authentication
 
 
 
-🧠 Contextual Understanding & Memory
+
+**🧠 Contextual Understanding & Memory
 
 Tracks user search history and preferences
 
@@ -167,7 +169,8 @@ Provides personalized search results
 Official Website: https://www.facesearchai.com/
 
 
-🔒 Security & Compliance
+
+**🔒 Security & Compliance
 
 API key authentication for secure access
 
@@ -176,7 +179,8 @@ Regular security audits to ensure data protection
 Data encryption and anonymization
 
 
-🌐 Webs
+
+**🌐 Webs
 
 Official Website: https://www.facesearchai.com
 Twitter: https://x.com/facesearchai
