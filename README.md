@@ -1,32 +1,57 @@
-# FaceSearchAI API - README
+# Face Search AI
 
-## Overview
+https://www.facesearchai.com/FaceSeachLogo.svg
 
-Face Search AI Face Search AI is an advanced facial recognition platform that allows users to search for images based on facial attributes. This innovative platform provides an efficient way to find images across the web, leveraging cutting-edge AI technology. Face Search AI is dedicated to maintaining user privacy and security, ensuring all data is handled responsibly.Face Search AI aims to provide a seamless and intuitive experience for users and developers alike. With a strong focus on security, privacy, and efficiency, Face Search AI continues to push the boundaries of what's possible in the world of facial recognition technology.
+## About Face Search AI
+
+Face Search AI is a cutting-edge platform that enables users to find images of individuals, identify their sources, and extract detailed information such as names and descriptions. It offers tools to enhance privacy and protect personal images.
+
+
+### Supported Platforms
+
+- Telegram Bot  
+- iOS and Android Apps  
+- Web Application  
+
+### Features
+
+- **Image-Based Search**: Upload an image to find related images and their sources.  
+- **Information Extraction**: Retrieve details like the name and description of the person in the image.  
+- **Image Protection**: File DMCA takedown requests for unauthorized use of your images.  
+
+Face Search AI combines innovation and privacy protection, shaping the future of face search technology.
+
 ---
 
-## Requirements
+## For Developers
 
-- Python 3
-- `requests` library
+FaceSearchAI offers a powerful API for integrating image-based search and privacy protection tools into your applications.
 
 ---
 
+### API Documentation
 
-## Developer Section
+#### Requirements
 
-## API Endpoints
+- Python 3  
+- `requests` library  
 
-### 1. **Search API**
+---
 
-- **Endpoint**: `https://facesearchai.com/api/search`
-- **Method**: `POST`
-- **Headers**:
-  - `api-key`: Your API key (contact `contact@facesearchai.com` to obtain one)
-  - `accept`: `application/json`
-- **Payload**:
-  - File upload (accepted formats: jpg, jpeg, png, webp)
-  - File size limit: 10 MB
+### API Endpoints
+
+#### 1. **Search API**
+
+Use the Search API to upload an image and retrieve related images along with their sources.
+
+- **Endpoint**: `https://facesearchai.com/api/search`  
+- **Method**: `POST`  
+- **Headers**:  
+  - `api-key`: Your API key (contact `contact@facesearchai.com` to obtain one).  
+  - `accept`: `application/json`  
+- **Payload**:  
+  - Upload a file (formats: jpg, jpeg, png, webp).  
+  - File size limit: 10 MB.  
 
 **Example Code**:
 
@@ -75,13 +100,14 @@ else:
 
 ---
 
-### 2. **Profile Info API**
+#### 2. **Profile Info API**
 
-- **Endpoint**: `https://facesearchai.com/api/info`
-- **Method**: `GET`
-- **Headers**:
-  - `api-key`: Your API key
-- **Description**: Fetch account information like daily/ monthly credits and subscription date.
+Use the Profile Info API to retrieve details about your account, such as available credits and subscription information.
+
+- **Endpoint**: `https://facesearchai.com/api/info`  
+- **Method**: `GET`  
+- **Headers**:  
+  - `api-key`: Your API key.  
 
 **Example Code**:
 
@@ -117,27 +143,19 @@ else:
 
 ---
 
-## Error Handling
+### Error Handling
 
-- **401 Unauthorized**: Check your API key.
-- **413 Payload Too Large**: Ensure the uploaded file is under 10 MB.
-- **415 Unsupported Media Type**: Verify file format (jpg, jpeg, png, webp).
-- **429 Too Many Requests**: Check your daily or monthly credit usage.
-
----
-
-## Contact
-
-For support or API key requests, email: `contact@facesearchai.com`
+- **401 Unauthorized**: Verify your API key.  
+- **413 Payload Too Large**: Ensure the file size is below 10 MB.  
+- **415 Unsupported Media Type**: Use only supported file formats (jpg, jpeg, png, webp).  
+- **429 Too Many Requests**: Monitor your daily or monthly credit usage.  
 
 ---
 
-## License
-
-This API is proprietary. Unauthorized use is prohibited.
 
 
----
+Face Search AI empowers developers and users with innovative image search and privacy protection tools. Integrate today and revolutionize the way you manage and protect your images.   
+
 
 ## ✨ Key Features
 
@@ -157,24 +175,17 @@ API key-based secure authentication
 
 
 
+## 🧠 Adaptive Search
 
-## 🧠 Contextual Understanding & Memory
+Tracks user search history.
 
-Tracks user search history and preferences
-
-Cross-session context retention
-
-Provides personalized search results
-
-
+Provides search results
 
 
 
 ## 🔒 Security & Compliance
 
 API key authentication for secure access
-
-Regular security audits to ensure data protection
 
 Data encryption and anonymization
 
@@ -193,5 +204,19 @@ Instagram: https://www.instagram.com/facesearch1/
 LinkedIn: https://www.linkedin.com/company/facesearch-ai/
 
 Support Email: support@facesearch.com
+
+
+### Contact
+
+For support or API key requests, email: `contact@facesearchai.com`.  
+
+---
+
+### License
+
+This API is proprietary. Unauthorized use is strictly prohibited.  
+
+--- 
+
 
 
