@@ -1,6 +1,6 @@
 # Face Search AI
 
-https://www.facesearchai.com/FaceSeachLogo.svg
+![Face Search AI Logo](https://example.com/logo.png)
 
 ## About Face Search AI
 
