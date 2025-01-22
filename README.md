@@ -137,7 +137,7 @@ For support or API key requests, email: `contact@facesearchai.com`
 This API is proprietary. Unauthorized use is prohibited.
 
 
-
+---
 
 ## ✨ Key Features
 
@@ -178,14 +178,18 @@ Regular security audits to ensure data protection
 
 Data encryption and anonymization
 
-
+---
 
 ## 🌐 Webs
 
 Official Website: https://www.facesearchai.com
+
 Twitter: https://x.com/facesearchai
+
 Facebook: https://www.facebook.com/people/Face-Search-AI/61567500925978/
+
 Instagram: https://www.instagram.com/facesearch1/
+
 LinkedIn: https://www.linkedin.com/company/facesearch-ai/
 
 Support Email: support@facesearch.com
