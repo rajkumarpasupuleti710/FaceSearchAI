@@ -23,7 +23,7 @@ Face Search AI is a cutting-edge platform that enables users to find images of i
 
 Face Search AI combines innovation and privacy protection, shaping the future of face search technology.
 
-![Face Search AI](https://cdn.dribbble.com/users/1116528/screenshots/6783134/_3.gif)
+![Face Search AI](https://cdn.dribbble.com/users/1116528/screenshots/6783134/_3)
 
 ---
 
